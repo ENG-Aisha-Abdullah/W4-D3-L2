@@ -4,7 +4,7 @@ let saudiaAirline = {
     fleetSize: 120,
     destinations: ["الرياض", "جدة", "دبي", "نيويورك"],
     inOperation: true,
-    bookFlight: function(destination) {
+    bookFlight: function (destination) {
         if (this.destinations.includes(destination)) {
             console.log(`تم حجز رحلة إلى ${destination}.`);
         } else {
@@ -25,7 +25,7 @@ let saudiaAirline = {
             ${this.country} وتمتلك 
             ${this.fleetSize} طائرة وتطير إلى 
             ${this.destinations.length} وجهة `);
-    }  
+    }
 };
 
 
@@ -38,6 +38,3 @@ saudiaAirline.addDestination("لندن");
 
 saudiaAirline.getSummary();
 // الخطوط الجوية السعودية تعمل في السعودية وتمتلك 120 طائرة وتطير إلى 21 وجهة.
-
-
-
